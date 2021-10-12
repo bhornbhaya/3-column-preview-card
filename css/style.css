@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  color: #f2f2f2;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-left: 4rem;
+  margin-right: 4rem;
+  display: inline-block;
+}
+
+img {
+  display: block;
+  margin: 4rem;
+}
+
+@media only screen and (min-width: 20em) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 8rem auto;
+    max-width: 32rem;
+  }
+}
+
+@media only screen and (min-width: 60.06em) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 16rem auto;
+    max-width: 100rem;
+  }
+}
+
+@media only screen and (min-width: 20em) {
+  .card__sedans {
+    background-color: #e38826;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+}
+
+@media only screen and (min-width: 60.06em) {
+  .card__sedans {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1rem;
+  }
+}
+
+.card__suvs {
+  background-color: #006970;
+}
+
+@media only screen and (min-width: 20em) {
+  .card__luxury {
+    background-color: #004241;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}
+
+@media only screen and (min-width: 20em) and (min-width: 60.06em) {
+  .card__luxury {
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.card__btn {
+  font-family: 'Lexend Deca', sans-serif;
+  margin-left: 4rem;
+  margin-top: 2.5rem;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 25rem;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  background-color: #f2f2f2;
+  border: 0.3rem solid #f2f2f2;
+  display: inline-block;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 60.06em) {
+  .card__btn {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.card__btn--sedans {
+  color: #e38826;
+}
+
+.card__btn--sedans:hover {
+  background-color: #e38826;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card__btn--suvs {
+  color: #006970;
+}
+
+.card__btn--suvs:hover {
+  background-color: #006970;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card__btn--luxury {
+  color: #004241;
+}
+
+.card__btn--luxury:hover {
+  background-color: #004241;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card__btn:active {
+  -webkit-transform: translateY(0.5rem);
+          transform: translateY(0.5rem);
+}
